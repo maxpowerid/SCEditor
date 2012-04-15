@@ -1,0 +1,11 @@
+permalink: title
+pygments: true
+markdown: rdiscount
+
+domain: sceditor.samclarke.com
+title: SCEditor
+author: Sam Clarke
+email: sam@samclarke.com
+
+github:
+username: samclarke
