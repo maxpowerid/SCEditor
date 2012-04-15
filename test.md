@@ -6,14 +6,14 @@ description: Sceditor : A lightweight WYSIWYG HTML and BBCode editor
 
 ## Demo
 
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"> </script>
+<!--script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"> </script>
 <link rel="stylesheet" href="https://raw.github.com/samclarke/SCEditor/master/minified/jquery.sceditor.min.css" type="text/css" media="all" />
 <script type="text/javascript" src="https://raw.github.com/samclarke/SCEditor/master/minified/jquery.sceditor.min.js"> </script>
 <script>$(document).ready(function() {
 	$("textarea").sceditorBBCodePlugin({
 		style: "https://raw.github.com/samclarke/SCEditor/master/minified/jquery.sceditor.default.min.css"
 	});
-});</script>
+});</script-->
 
 <textarea>This [b]is[/b] [color=#ff0000]a[/color] [size=3]demo[/size] :).</textarea>
 
