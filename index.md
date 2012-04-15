@@ -1,7 +1,6 @@
 ---
 layout: default
 title: SCEditor - A lightweight WYSIWYG HTML and BBCode editor
-description: Sceditor : A lightweight WYSIWYG HTML and BBCode editor
 ---
 
 ## Demo
@@ -20,27 +19,27 @@ description: Sceditor : A lightweight WYSIWYG HTML and BBCode editor
 ## Setup
 To use SCEditor, first include jQuery and SCEditor:
 
-```html
+{% highlight html %}
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <link rel="stylesheet" href="minified/jquery.sceditor.min.css" type="text/css" media="all" />
 <script type="text/javascript" src="minified/jquery.sceditor.min.js"></script>
-```
+{% endhighlight %}
 
 Then simply do:
 
-```javascript
+{% highlight javascript %}
 $(document).ready(function() {
 	$("textarea").sceditor();
 });
-```
+{% endhighlight %}
 
 or for the BBCode WYSIWYG editor do:
 
-```javascript
+{% highlight javascript %}
 $(document).ready(function() {
 	$("textarea").sceditorBBCodePlugin();
 });
-```
+{% endhighlight %}
 
 For options see the readme or [documentation](http://www.samclarke.com/2012/04/sceditor-documentation/).
 
