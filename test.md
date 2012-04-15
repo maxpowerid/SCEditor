@@ -1,5 +1,7 @@
 ---
+layout: default
 title: SCEditor - A lightweight WYSIWYG HTML and BBCode editor
+description: Sceditor : A lightweight WYSIWYG HTML and BBCode editor
 ---
 
 ## Demo
