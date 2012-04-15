@@ -8,9 +8,9 @@ title: SCEditor - A lightweight WYSIWYG HTML and BBCode editor
 <link rel="stylesheet" href="https://raw.github.com/samclarke/SCEditor/master/minified/jquery.sceditor.min.css" type="text/css" media="all" />
 <script type="text/javascript" src="https://raw.github.com/samclarke/SCEditor/master/minified/jquery.sceditor.min.js"> </script>
 <script>$(document).ready(function() {
-	$("textarea").sceditorBBCodePlugin(
+	$("textarea").sceditorBBCodePlugin({
 		style: "https://raw.github.com/samclarke/SCEditor/master/minified/jquery.sceditor.default.min.css"
-	);
+	});
 });</script>
 
 <textarea>This [b]is[/b] [color=#ff0000]a[/color] [size=3]demo[/size] :).</textarea>
