@@ -5,19 +5,19 @@ title: SCEditor - A lightweight WYSIWYG HTML and BBCode editor
 
 ## Demo
 
-<!--script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"> </script>
-<link rel="stylesheet" href="https://raw.github.com/samclarke/SCEditor/master/minified/jquery.sceditor.min.css" type="text/css" media="all" />
-<script type="text/javascript" src="https://raw.github.com/samclarke/SCEditor/master/minified/jquery.sceditor.min.js"> </script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"> </script>
+<link rel="stylesheet" href="minified/jquery.sceditor.min.css" type="text/css" media="all" />
+<script type="text/javascript" src="minified/jquery.sceditor.min.js"> </script>
 <script>$(document).ready(function() {
 	$("textarea").sceditorBBCodePlugin({
-		style: "https://raw.github.com/samclarke/SCEditor/master/minified/jquery.sceditor.default.min.css"
+		style: "minified/jquery.sceditor.default.min.css"
 	});
-});</script-->
+});</script>
 
-<textarea>This [b]is[/b] [color=#ff0000]a[/color] [size=3]demo[/size] :).</textarea>
+<textarea style="width:600px; height:300px">This [b]is[/b] [color=#ff0000]a[/color] [size=3]demo[/size] :).</textarea>
 
 ## Setup
-To use SCEditor, first include jQuery and SCEditor:
+First include JS and CSS files for jQuery and SCEditor:
 
 {% highlight html %}
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -41,7 +41,7 @@ $(document).ready(function() {
 });
 {% endhighlight %}
 
-For options see the readme or [documentation](http://www.samclarke.com/2012/04/sceditor-documentation/).
+For options or more details see the readme or [documentation](http://www.samclarke.com/2012/04/sceditor-documentation/).
 
 ## Support or Contact
 If you find any bugs or have any questions you can contact me via
