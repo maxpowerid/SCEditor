@@ -18,7 +18,7 @@ navtitle: Home
 <textarea style="width:600px; height:300px">This [b]is[/b] [color=#ff0000]a[/color] [size=3]demo[/size] :).</textarea>
 
 ## Setup
-First include JS and CSS files for jQuery and SCEditor:
+First include the JS and CSS files for jQuery and SCEditor:
 
 {% highlight html %}
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -44,7 +44,7 @@ $(document).ready(function() {
 
 For options or more details see the readme or [documentation](http://www.samclarke.com/2012/04/sceditor-documentation/).
 
-## Support or Contact
+## Support
 If you find any bugs or have any questions you can contact me via
 [my website](http://www.samclarke.com/contact),
 via [GitHub](http://www.samclarke.com/contact)
@@ -52,14 +52,14 @@ or by [leaving a comment](http://www.samclarke.com/2011/07/sceditor/).
 
 
 ## Credits
-**SCeditor by:**
-Sam Clarke (@samclarke)
+**SCeditor by:**<br />
+Sam Clarke ([@samclarke](http://github.com/samclarke))
 
-**Nomicons: The Full Monty Emoticons by:**
-Oscar Gruno, aka Nominell v. 2.0 -> oscargruno@mac.com
+**Nomicons: The Full Monty Emoticons by:**<br />
+Oscar Gruno, aka Nominell v. 2.0 -> oscargruno@mac.com<br />
 Andy Fedosjeenko, aka Nightwolf -> bobo@animevanguard.com
 
-**Icons by:**
-Mark James (http://www.famfamfam.com/lab/icons/silk/)
+**Icons by:**<br />
+Mark James (http://www.famfamfam.com/lab/icons/silk/)<br />
 Licensed under the [Creative Commons CC-BY license](http://creativecommons.org/licenses/by/3.0/).
 
