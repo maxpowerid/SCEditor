@@ -1,6 +1,7 @@
 ---
 layout: default
 title: SCEditor - A lightweight WYSIWYG HTML and BBCode editor
+navtitle: Home
 ---
 
 ## Demo

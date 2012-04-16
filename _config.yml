@@ -7,5 +7,8 @@ title: SCEditor
 author: Sam Clarke
 email: sam@samclarke.com
 
+disqus:
+id: sceditor
+
 github:
 username: samclarke
