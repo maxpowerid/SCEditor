@@ -1,0 +1,95 @@
+---
+layout: post
+title: How to upload and insert an image
+excerpt: Breif example of how to upload an image and then insert it
+tags: [HTML, BBCode, demo, example, image]
+last_updated: 2012-04-17
+categories:
+    - Demo
+    - BBCode
+    - HTML
+---
+<h2>Quote demo</h2>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"> </script>
+<link rel="stylesheet" href="/minified/jquery.sceditor.min.css" type="text/css" media="all" />
+<script type="text/javascript" src="/minified/jquery.sceditor.min.js"> </script>
+<script>
+$(document).ready(function() {
+	$("#demo-image").sceditorBBCodePlugin({
+		style: "/minified/jquery.sceditor.default.min.css",
+		emoticons: {
+			dropdown: {
+				":)": "/emoticons/smile.png",
+				":angel:": "/emoticons/angel.png",
+				":angry:": "/emoticons/angry.png",
+				"8-)": "/emoticons/cool.png",
+				":'(": "/emoticons/cwy.png",
+				":ermm:": "/emoticons/ermm.png",
+				":D": "/emoticons/grin.png",
+				"<3": "/emoticons/heart.png",
+				":(": "/emoticons/sad.png",
+				":O": "/emoticons/shocked.png",
+				":P": "/emoticons/tongue.png",
+				";)": "/emoticons/wink.png"
+			},
+			more: {
+				":alien:": "/emoticons/alien.png",
+				":blink:": "/emoticons/blink.png",
+				":blush:": "/emoticons/blush.png",
+				":cheerful:": "/emoticons/cheerful.png",
+				":devil:": "/emoticons/devil.png",
+				":dizzy:": "/emoticons/dizzy.png",
+				":getlost:": "/emoticons/getlost.png",
+				":happy:": "/emoticons/happy.png",
+				":kissing:": "/emoticons/kissing.png",
+				":ninja:": "/emoticons/ninja.png",
+				":pinch:": "/emoticons/pinch.png",
+				":pouty:": "/emoticons/pouty.png",
+				":sick:": "/emoticons/sick.png",
+				":sideways:": "/emoticons/sideways.png",
+				":silly:": "/emoticons/silly.png",
+				":sleeping:": "/emoticons/sleeping.png",
+				":unsure:": "/emoticons/unsure.png",
+				":woot:": "/emoticons/w00t.png",
+				":wassat:": "/emoticons/wassat.png"
+			},
+			hidden: {
+				":whistling:": "/emoticons/whistling.png",
+				":love:": "/emoticons/wub.png"
+			}
+		}
+	});
+});
+
+window.sceditorInstance = $("#demo-image").data("sceditor");
+</script>
+
+<p><textarea style="width:600px; height:300px" id="demo-image">This [b]is[/b] [color=#ff0000]a[/color] [size=3]demo[/size] :).</textarea></p>
+<form action="http://www.imageshack.us/redirect_api.php" method="post" enctype="multipart/form-data" target="upload">
+	<p><label>Image: <input type="file" name="media" /></label></p>
+
+	<p><label>Size: <select name="optsize" id="optsize">
+		<option value="resample">optimize without resizing</option>
+		<option value="100x100">100x75 (avatar)</option>
+		<option value="150x150">150x112 (thumbnail)</option>
+		<option value="320x320">320x240 (for websites and email)</option>
+		<option value="640x640">640x480 (for message boards)</option>
+		<option value="800x800">800x600 (15-inch monitor)</option>
+		<option value="1024x1024">1024x768 (17-inch monitor)</option>
+		<option value="1280x1280">1280x1024 (19-inch monitor)</option>
+		<option value="1600x1600">1600x1200 (21-inch monitor)</option>
+	</select></label></p>
+
+	<input type="hidden" name="key" value="346BFSTXbeec88bae13b92b2f4c8d888fdc8e420" />
+	<input type="hidden" name="rembar" value="yes" />
+	<input type="hidden" name="error_url" value="http://{{ site.domain }}/misc/imageshack-example.html" />
+	<input type="hidden" name="success_url" value="http://{{ site.domain }}/misc/imageshack-example.html?url=%u&server=%s&bucket=%b&filename=%i" />
+
+	<p><input type="submit" value="Upload" /></p>
+</form>
+<iframe style="visibility: hidden; height: 0; width: 0" id="upload" name="upload"></iframe>
+
+<h2>Code behind it</h2>
+
+<p>Add code here</p>
