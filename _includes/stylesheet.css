@@ -163,3 +163,10 @@ a:hover {
 	text-decoration: underline;
 }
 #footer_wrap a:hover { text-decoration: none; }
+
+@media screen and (max-width: 480px) {
+	body { font-size:14px; }
+	#downloads { display: none; }
+	#main_content_wrap, #header_wrap .inner, #nav_wrap .inner, #footer_wrap .inner { width: 480px; }
+	textarea { max-width: 418px !important; }
+}

@@ -44,11 +44,37 @@ $(document).ready(function() {
 
 For options or more details see the readme or [documentation](http://www.samclarke.com/2012/04/sceditor-documentation/).
 
+
+## Features
+
+* Bold, underline, italic, superscript and subscript
+* Left, center, right and justify text
+* Text size, color and font
+* As You Type emoticon conversion
+* Tables
+* Lists
+* Code and quote tags
+* Images and links
+* I18n support
+
+
+## Compatibility
+
+SCEditor should work in at *least*: IE 6+, FF 3.5, Chrome, Opera 9.5+ &amp; Safari 4+.
+
+
 ## Support
 If you find any bugs or have any questions you can contact me via
 [my website](http://www.samclarke.com/contact),
 via [GitHub](http://www.samclarke.com/contact)
 or by [leaving a comment](http://www.samclarke.com/2011/07/sceditor/).
+
+
+## Donate
+
+If you would like to make a donation you can via
+[PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AVJSF5NEETYYG)
+or via [Flattr](http://flattr.com/thing/400345/SCEditor)
 
 
 ## Credits

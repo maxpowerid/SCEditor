@@ -1,16 +1,17 @@
 ---
 layout: disqus
 ---
+<div class="post">
+	{{ content }}
+</div>
+
 {% if page.date %}
 <div class="postdate">
 	Posted on {{ page.date | date_to_string }}{% if page.last_updated %}, last updated on {{ page.last_updated | date_to_string }}{% endif %}
 </div>
 {% endif %}
-
-<div class="post">
-	{{ content }}
-</div>
  
+{% if site.related_posts %}
 <div id="related">
 	<h2>Related Posts</h2>
 	<ul class="posts">
@@ -19,3 +20,4 @@ layout: disqus
 		{% endfor %}
 	</ul>
 </div>
+{% endif %}

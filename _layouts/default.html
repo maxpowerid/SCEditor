@@ -17,7 +17,7 @@
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 
-		<link rel="stylesheet" type="text/css" media="screen" href="all.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="/all.css">
 		<link href="http://{{ site.domain }}/atom.xml" rel="alternate" title="{{ site.title }}" type="application/atom+xml" />
 
 		{% if site.feedburner %}
@@ -40,9 +40,9 @@
 		<div id="nav_wrap" class="outer">
 			<nav class="inner">
 				<ul>
-					{% for page in site.html_pages %}
-						{% if page.navtitle %}<li><a href="http://{{ site.domain }}{{ page.url }}">{{ page.navtitle }}</a></li>{% endif %}
-					{% endfor %}
+					<li><a href="/">Home</a></li>
+					<li><a href="/posts.html">Posts</a></li>
+					<li><a href="/documentation.html">Documentation</a></li>
 					<li><a href="https://github.com/samclarke/SCEditor">GitHub</a></li>
 				</ul>
 
@@ -80,5 +80,20 @@
 			})();
 		</script>
 		{% endif %}
+
+		<!-- Piwik -->
+		<script type="text/javascript">
+		var pkBaseURL = (("https:" == document.location.protocol) ? "https://www.samclarke.com/piwik/" : "http://www.samclarke.com/piwik/");
+		document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+		try {
+			var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+			piwikTracker.trackPageView();
+			piwikTracker.enableLinkTracking();
+		} catch( err ) {}
+		</script>
+		<noscript><p style="height: 0; width: 0;"><img src="http://www.samclarke.com/piwik/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+		<!-- End Piwik Tracking Code -->
 	</body>
 </html>
