@@ -5,13 +5,13 @@
 	<channel>
 		<title>{{ site.title }}</title>
 		<link>http://{{ site.domain }}/</link>
-		<atom:link href="http://{{ site.domain }}/rss.xml" rel="self" type="application/rss+xml" />
-		<description>SCEditor posts and relesases RSS feed</description>
+		<atom:link href="http://{{ site.domain }}/release.xml" rel="self" type="application/rss+xml" />
+		<description>SCEditor releases RSS feed</description>
 		<language>en</language>
 	<pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
 	<lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
 
-	{% for post in site.posts %}
+	{% for post in site.categories.releases %}
 	<item>
 		<title>{{ post.title }}</title>
 		<link>http://{{ site.domain }}{{ post.url }}</link>

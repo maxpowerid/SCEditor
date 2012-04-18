@@ -1,4 +1,4 @@
-permalink: /posts/:title.html
+permalink: /posts/:title
 pygments: true
 markdown: rdiscount
 
