@@ -7,17 +7,10 @@ layout: disqus
 
 {% if page.date %}
 <div class="postdate">
-	Posted on {{ page.date | date_to_string }}{% if page.last_updated %}, last updated on {{ page.last_updated | date_to_string }}{% endif %}
-</div>
-{% endif %}
- 
-{% if site.related_posts %}
-<div id="related">
-	<h2>Related Posts</h2>
-	<ul class="posts">
-		{% for post in site.related_posts limit:5 %}
-		<li><span>{{ post.date | date_to_string }}</span> - <a href="{{ post.url }}">{{ post.title }}</a></li>
-		{% endfor %}
-	</ul>
+	Posted on
+	<time datetime="{{ page.date | date: "%Y %m %d" }}">{{ page.date | date_to_string }}</time>{% if page.last_updated %},
+	last updated on
+	<time datetime="{{ page.last_updated | date: "%Y %m %d" }}">{{ page.last_updated | date_to_string }}</time>
+	{% endif %}
 </div>
 {% endif %}

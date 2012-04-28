@@ -141,6 +141,12 @@ a:hover {
 	border-left: 1px solid #ccc;
 	border-right: 1px solid #ccc;
 }
+.postdate {
+	padding: .1em 0;
+	color: #555;
+	border: 1px solid #bbb;
+	border-width: 1px 0;
+}
 #footer_wrap {
 	border-top: 1px solid #000;
 	background: #33373a;
@@ -163,6 +169,7 @@ a:hover {
 	text-decoration: underline;
 }
 #footer_wrap a:hover { text-decoration: none; }
+
 
 @media screen and (max-width: 480px) {
 	body { font-size:14px; }

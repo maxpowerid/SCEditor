@@ -3,7 +3,6 @@ layout: post
 title: How to insert quotes
 excerpt: Breif example of how to insert a quote
 tags: [HTML, BBCode, demo, example]
-last_updated: 2012-04-17
 categories:
     - Demo
     - BBCode

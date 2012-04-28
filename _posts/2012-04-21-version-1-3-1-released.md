@@ -3,7 +3,6 @@ layout: post
 title: Version 1.3.1 released
 excerpt: Details of the 1.3.1 release
 tags: [releases, 1.3.1]
-last_updated: 2012-04-21
 categories:
     - releases
 ---

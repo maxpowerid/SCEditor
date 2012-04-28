@@ -3,7 +3,6 @@ layout: post
 title: BBCode Demo
 excerpt: Demo of SCEditor used to produce BBCode
 tags: [BBCode, demo, example]
-last_updated: 2012-04-16
 categories:
     - Demo
     - BBCode
