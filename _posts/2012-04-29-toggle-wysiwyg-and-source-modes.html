@@ -1,0 +1,52 @@
+---
+layout: post
+title: Toggle WYSIWYG and source modes
+excerpt: Example of how to programmatically toggle between WYSIWYG and source modes
+categories:
+    - Example
+    - How To
+---
+<h2>Toggle WYSIWYG and source modes</h2>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"> </script>
+<link rel="stylesheet" href="/minified/jquery.sceditor.min.css" type="text/css" media="all" />
+<script type="text/javascript" src="/minified/jquery.sceditor.min.js"> </script>
+<script>
+$(document).ready(function() {
+	$("#demo-toggle").sceditorBBCodePlugin({
+		toolbar: "bold,italic,underline|source",
+		style: "/minified/jquery.sceditor.default.min.css",
+		emoticonsRoot: "/"
+	});
+});
+
+function toggle()
+{
+	$("#demo-toggle").data("sceditor").toggleTextMode();
+}
+</script>
+
+<p><textarea style="width:600px; height:300px" id="demo-toggle">Simple [b]demo[/b].</textarea></p>
+<p><a href="javascript:toggle();">Toggle editor mode</a></p>
+
+<h2>Code behind it</h2>
+
+<p>Setup the editor:</p>
+
+{% highlight javascript %}
+$(document).ready(function() {
+	$("#demo-toggle").sceditorBBCodePlugin({
+		toolbar: "bold,italic,underline|source",
+		style: "/minified/jquery.sceditor.default.min.css",
+		emoticonsRoot: "/"
+	});
+});
+{% endhighlight %}
+
+<p>Then, to switch between the WYSIWYG mode and source mode, simply call the toggleTextMode method on the editor:</p>
+
+{% highlight javascript %}
+$("#demo-toggle").data("sceditor").toggleTextMode();
+{% endhighlight %}
+
+<p></p>
