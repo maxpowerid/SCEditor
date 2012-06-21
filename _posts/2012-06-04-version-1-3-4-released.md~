@@ -6,16 +6,13 @@ tags: [releases, 1.3.4]
 categories:
     - releases
 ---
-## Version 1.3.3
+## Version 1.3.4
 
 The main fix in this release is a nasty bug causing some BBCodes to be stripped.
 
-### Full 1.3.3 changelog:
-* Added dropDownCss option, thanks to @esion
-* Add txtExec option to setCommand function
-* Updated BBCode plugin to support some BBCodes in source mode
-* Updated editor to disable AYT emotion converstion if emotions is not in toolbar
-* Fixed rare problem with value not being subbmited - Thanks to Marco for reporting
-* Added experimental paste filtering
+### Full 1.3.4 changelog:
+* Updated focus method to work in source mode
+* Added public inSourceMode method
+* Fix bug causing BBCodes to be striped - Thanks to Nibogo2 for reporting
 
 If you are interested in new releases, subscribe to the [releases RSS](http://{{ site.domain }}/release.xml).

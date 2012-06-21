@@ -13,12 +13,11 @@ var disqus_shortname = 'sceditor';
 </script>
 
 <div class="post">
+	<h2><a href="{{ page.url }}" class="title">{{ page.title }}</a></h2>
+	<div class="postdate">
+		<time datetime="{{ page.date | date: "%Y %m %d" }}">{{ page.date | date_to_string }}</time>
+		| <a href="{{ page.url }}/#disqus_thread">Comments</a>
+	</div>
+
 	{{ content }}
 </div>
-
-{% if page.date %}
-<div class="postdate">
-	<time datetime="{{ page.date | date: "%Y %m %d" }}">{{ page.date | date_to_string }}</time>
-	| <a href="{{ page.url }}/#disqus_thread">Comments</a>
-</div>
-{% endif %}

@@ -19,12 +19,9 @@ body {
 	line-height: 1.5;
 }
 
-
-
 /**************
  * Typography *
  **************/
-
 h1, h2, h3, h4, h5, h6 {
 	color: #222;
 	font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
@@ -62,12 +59,9 @@ a:hover {
 	margin: 0;
 }
 
-
-
 /**********
  * Layout *
  **********/
-
 #header_wrap {
 	overflow: hidden;
 	font-size: 1.3em;

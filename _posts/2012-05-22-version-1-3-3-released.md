@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: release
 title: Version 1.3.3 released
 excerpt: Details of the 1.3.3 release
 tags: [releases, 1.3.2]
@@ -19,5 +19,3 @@ The paste filetering is disabled by default to avoid any problems.
 * Updated editor to disable AYT emotion converstion if emotions is not in toolbar
 * Fixed rare problem with value not being subbmited - Thanks to Marco for reporting
 * Added experimental paste filtering
-
-If you are interested in new releases, subscribe to the [releases RSS](http://{{ site.domain }}/release.xml).

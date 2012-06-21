@@ -4,6 +4,7 @@ title: Posts
 navtitle: Posts
 permalink: /posts/
 ---
+
 <ul class="posts">
 	{% for post in site.posts %}
 	<div class="post_info">
